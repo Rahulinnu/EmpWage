@@ -3,13 +3,13 @@ namespace EmpWage
 {
     public class UC6
     {
-        public UC6()
+        public void Usca6()
         {
+            Console.WriteLine("\n --Welcome to UC6-- \n");
             int empHrs = 0;
             int empWage = 0;
             int wage_Per_Hour = 20;
             int totWage = 0;
-            int i = 0, j = 0;
             int max_WorkingHrs = 0, max_WorkingDays = 0;
             Random random = new Random();
             while (max_WorkingHrs <= 100 && max_WorkingDays <= 19)
@@ -37,7 +37,6 @@ namespace EmpWage
                         break;
 
                 }
-
 
                 empWage = empHrs * wage_Per_Hour;
                 Console.WriteLine("Employee wage = " + empWage + "\n");
